@@ -1,0 +1,370 @@
+/* My Framework */
+.img-fluid{width:100%}
+.bg-g{ background-color: #556f62;}
+.bg-w{background-color: #f9f9f7;}
+.bg-b{background-color: #1e1e1e;}
+.bg-gry{background-color: #e2e2e2}
+.color-g{ color:#556f62;}
+.color-w{ color:#f9f9f7;}
+.color-b{ color:#1e1e1e;}
+.color-gry{ color: #e2e2e2}
+.no-pad-lr{padding-left: 0!important;padding-right: 0!important;}
+.no-padding-r{padding-right: 0!important;}
+.no-padding-l{padding-left: 0!important;}
+.no-margin-bottom{margin-bottom: 0 !important;}
+a:hover, a:focus {text-decoration: none;}
+.pad-dwn{padding-bottom:30px;}
+.marg-dwn{margin-bottom: 120px;}
+
+
+/* End My Framework */ 
+
+/* INCLUDE FONTS */
+@font-face {
+    font-family: Azuro;
+    src: url(../fonts/Azuro.ttf);
+}
+@font-face {
+    font-family: Azuro_Bold;
+    src: url(../fonts/Azuro_Bold.ttf);
+}
+@font-face {
+    font-family: Azuro_Bold_Italic;
+    src: url(../fonts/Azuro_Bold_Italic.ttf);
+}
+@font-face {
+    font-family: Azuro_Italic;
+    src: url(../fonts/Azuro_Italic.ttf);
+}
+
+/* Start main style */
+body{
+	font-family: Azuro;
+}
+/* End main style */
+
+/* Start Nav Bar */
+.navbar{
+	padding: .25rem 1rem;
+	background-color: #F0F0F0;
+}
+.my-logo{
+	padding: 0;
+	display:block;
+	max-width:200px;
+}
+
+ .my-logo img{
+    max-width:200px;
+}
+.nav-link{
+	font-family: Azuro_Bold;
+	color: #556f62 !important;
+	text-transform: uppercase;
+	font-size: 14px; 
+}
+.nav-link:hover, .nav-link:active{
+	color: #1e1e1e !important;
+	opacity: 1;
+}
+/*mobile Navbar*/
+@media (max-width: 991.98px) {nav .fa-shopping-bag{
+	font-size:22px;
+	
+}}
+
+header .go-back-div{
+	height: 9%;
+	width: 100%;
+	position: relative;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F8F8F8;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+
+.overlay a {
+    font-family: Azuro_Bold;
+    padding: 0px 0px 0px 15px;
+    line-height: 1.2;
+    text-decoration: none;
+    font-size: 32px;
+    color: #1e1e1e;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow:hidden;
+}
+.overlay ul a {
+    display:inline;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #556f62;
+}
+
+.overlay .closebtn {
+		position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0;
+    right: 15px;
+    font-size: 22px;
+		color:#f9f9f7;
+		overflow: visible;
+}
+.overlay .closebtn:hover{
+		color:#f9f9f7;
+		opacity:0.8;
+}
+
+.overlay .social-media-sec a{
+	display: inline;
+ 	color:#1e1e1e;
+	padding: 0;
+}
+.overlay .social-media-sec a:hover,
+.overlay .social-media-sec a:active{
+	opacity: 0.8;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*End Nav Bar*/
+
+/* Start Hero*/
+.hero .hero-text a{
+	display: block;
+	font-size:22px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+.hero .hero-text a:hover{
+	color:#f9f9f7;
+	cursor: pointer;
+	
+}
+/*End Hero*/
+
+/* Start Sale */
+.sale{margin-bottom: 40px;	}
+.sale hr{border: 1.5px solid #556f62;}
+.sale hr:first-of-type{margin-bottom: 0;}
+.sale hr:last-of-type{margin-top: 0;}
+.sale h2 { font-size: 30px;font-family: Azuro_Bold; text-transform: uppercase; margin: 3px 0;}
+.sale .sale-products h2{font-size: 22px;  display: inline; padding-right: 6px; }
+.sale .sale-products .sale-product-price{padding: 5px 0; }
+.sale .sale-products .sale-product-price span{font-size:14px; font-weight: bold;}
+.sale .sale-products .sale-product-price span:first-of-type{ text-decoration: line-through; padding-right: 10px;}
+.sale .sale-products .sale-product-price span:last-of-type{color:#556f62;}
+/*  End Sale */
+
+
+
+
+/* Start collections */
+.collections .full-h2{
+	border-top: 15px solid #556f62;
+	border-bottom: 15px solid #556f62;
+}
+.collections .full-h2 h2{
+	font-family: Azuro_Bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 5px 0;
+	margin:0;
+}
+.collections .collections-pics{
+	padding: 0px 0;
+}
+
+/*  End collections */
+/* Start approval */
+.approval .carousel-inner	.carousel-item .instagram-id{
+	bottom:10px;
+	left: 21%
+}
+.approval .carousel-inner	.carousel-item .instagram-id span,.approval .carousel-inner	.carousel-item .instagram-id a{
+	font-family: Azuro_Bold;
+	font-size: 16px;
+}
+.approval .carousel-inner	.carousel-item .instagram-id a:hover,.approval .carousel-inner	.carousel-item .instagram-id a:active{
+	opacity: .8;
+	color: #f9f9f7;
+}
+	
+/* End approval */
+
+/* Start Recipes */
+.recipes h3{font-size:35px; border-top:16px solid #556F62 ; letter-spacing: 2px; padding: 10px 5px; font-family: Azuro_Bold;}
+.recipes p{font-size:20px;}
+.recipes .recipes-imgs-div{ margin-bottom: 25px;width: 500px;height: 400px;margin-left: auto;margin-right: auto;position: relative}
+.recipes .recipes-imgs-div .recipes-img {position: absolute;    display: block; width:220px;height: auto}
+.recipes .recipes-imgs-div .recipes-img1{left:28%; z-index: 3}
+.recipes .recipes-imgs-div .recipes-img2{left: 0%; z-index: 2}
+.recipes .recipes-imgs-div .recipes-img3{right: 0; z-index: 1}
+
+
+@media (max-width: 575.98px) {
+	.recipes .recipes-imgs-div{width: 100%}
+	.recipes .recipes-imgs-div .recipes-img1{left:50%; z-index: 3;	transform: translateX(-50%);}
+
+	
+}
+.recipes-ul{ width: 250px; margin: auto;}
+.recipes ul li{font-size: 25px;font-family: Azuro_Bold; line-height: 35px;}
+.recipes ul li i{font-size: 12px;position: relative; bottom: 4px; right: 5px;}
+.recipes p:nth-of-type(1){ font-size:28px; margin-top: 20px}
+.recipes input{ display:block; width: 400px; height: 42px; margin: auto; margin-bottom: 10px;}
+@media (max-width: 575.98px) { .recipes input{
+	width: 90%;
+	}
+}
+
+.recipes input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: Azuro_Bold;
+	color: #556f62;
+	text-align: center;
+	font-size: 22px;
+}
+
+.recipes input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-family: Azuro_Bold;
+	color: #556f62;
+	text-align: center;
+	font-size: 22px;
+}
+
+.recipes input::-ms-input-placeholder { /* Microsoft Edge */
+	font-family: Azuro_Bold;
+	color: #556f62;
+	text-align: center;
+	font-size: 22px;
+}
+
+
+.recipes input:focus{outline: 1px solid #1e1e1e;}
+.recipes a{
+	font-family: Azuro_Bold;
+	display: block;
+	font-size:22px;
+	width: 300px;
+	text-align: center;	
+	margin: 40px auto 0 auto;
+	background-color: white;
+
+}
+.recipes a:hover{
+	color: #1e1e1e;
+}
+@media (max-width: 575.98px) { .recipes a{
+	width: 75%;
+	}
+}
+.recipes p:last-of-type{
+	font-family: Azuro_Bold;
+	font-size: 12px;
+	padding-bottom: 30px;
+	padding-top: 2px;
+	margin-bottom: 0;
+}
+/* End Recipes */
+
+/*Start Social media */
+.social-media-sec .social-media{
+	border: 8px solid #556f62;
+	padding: 10px 0;
+	width: 190px;
+	margin:60px auto;
+	text-align: center;
+}
+.social-media-sec .social-media i{
+	font-size: 42px;
+	padding: 0 5px;
+}
+
+.social-media-sec a{
+	display: inline;
+ 	color:#1e1e1e;
+	padding: 0;
+}
+.social-media-sec a:hover,
+.social-media-sec a:active{
+	opacity: 0.8;
+}
+
+
+
+/*Start Social media */
+/*Start footer */
+
+
+footer .footer-links {
+		padding-top: 10px;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+	  max-width: 750px;
+    margin: auto;
+}
+footer .footer-links a{
+	font-family: Azuro_Bold;
+	color: #f9f9f7;
+}
+footer .footer-links a:hover{
+	color: #f9f9f7;
+}
+footer p{
+	font-family: Azuro_Bold;
+	padding: 45px 0 10px 0;;
+}
+
+/*End footer*/
+
+
+/* start moataz-1 */ 
+@media (max-width: 767.98px) {
+    footer.bg-w-in-mob{background-color: #f9f9f7 ;}
+    footer .footer-links{display:block;}
+    footer .footer-links a{
+        font-family: Azuro_Bold;
+        line-height: 1.3;
+        font-size: 26px;
+        color: #1e1e1e;
+        transition: 0.3s;
+        padding-left:4%;
+    }
+    footer .footer-links li:first-of-type{padding-top:15px;}
+    footer .footer-links a:hover,footer .footer-links a:active{color: #556f62;}
+    footer p{color:#656565;}
+}
+/* end moataz-1 */
+
+
+
+
